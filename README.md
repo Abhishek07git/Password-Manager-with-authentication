@@ -40,6 +40,7 @@ Database
 
 MongoDB with Mongoose
 
+
 📂 Project Structure :
 
 /project-root
@@ -58,7 +59,3 @@ MongoDB with Mongoose
 │   └── index.js
 │
 └── README.md
-
-Database
-
-MongoDB with Mongoose
