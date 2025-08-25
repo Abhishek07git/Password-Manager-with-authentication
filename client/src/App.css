@@ -1,0 +1,96 @@
+@import "tailwindcss";
+@layer components{
+  .mycontainer{
+    @apply  container px-40 py-16 mx-auto
+  }
+}
+
+/* Reset and full screen layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #d9e2ec);
+}
+
+/* Wrapper that fills viewport and centers the form */
+.sign-up-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Heading */
+.sign-up-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* Signup form box */
+.sign-up-form {
+  width: 100%;
+  max-width: 400px;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.sign-up-form label {
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Inputs */
+.sign-up-form input {
+  padding: 0.75rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.sign-up-form input:focus {
+  border-color: #3b82f6;
+}
+
+/* Button */
+.sign-up-form button {
+  padding: 0.75rem;
+  background-color: #3b82f6;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.sign-up-form button:hover {
+  background-color: #2563eb;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 500px) {
+  .sign-up-form {
+    padding: 1.5rem;
+  }
+
+  .sign-up-container h2 {
+    font-size: 1.5rem;
+  }
+}
