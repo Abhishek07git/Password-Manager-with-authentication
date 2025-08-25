@@ -44,17 +44,22 @@ MongoDB with Mongoose
 
 /project-root
 │
-├── /client              # React frontend
-│   ├── src/
-│   │   ├── components/  # Navbar, Manager, Footer, etc.
-│   │   ├── pages/       # Login.jsx, Signup.jsx, Dashboard.jsx
-│   │   └── App.jsx
+├── client/                  # React frontend
+│   └── src/
+│       ├── components/      # Navbar, Manager, Footer, etc.
+│       ├── pages/           # Login.jsx, Signup.jsx, Dashboard.jsx
+│       └── App.jsx
 │
-├── /server              # Password manager backend (CRUD for passwords)
+├── server/                  # Password manager backend (CRUD for passwords)
 │
-├── /auth-server         # Authentication backend (signup, login, JWT)
-│   ├── models/User.js
-│   ├── routes/user.js
-│   └── index.js
+├── auth-server/             # Authentication backend (signup, login, JWT)
+│
+├── models/
+│   └── User.js
+│
+├── routes/
+│   └── user.js
+│
+├── index.js
 │
 └── README.md
