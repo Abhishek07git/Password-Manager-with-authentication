@@ -1,10 +1,9 @@
-🔐 Password Manager with Authentication
 
+## 🔐 Password Manager with Authentication
 A secure and user-friendly Password Manager built with MERN stack (MongoDB, Express.js, React.js, Node.js).
 This app allows users to register, log in, and securely store, edit, delete, and manage their passwords, ensuring data privacy with encryption and JWT authentication.
 
-🚀 Features
-
+## 🚀 Features
 ✅ User Authentication – Secure signup & login with hashed passwords
 
 ✅ JWT-based Authorization – Access protected routes with tokens stored in HTTP-only cookies
@@ -16,17 +15,16 @@ This app allows users to register, log in, and securely store, edit, delete, and
 ✅ Password CRUD Operations – Add, edit, delete, and search saved credentials
 
 ✅ Responsive UI – Built with React.js for a smooth user experience
-
-🛠️ Tech Stack
-Frontend (React.js)
+## 🛠️ Tech Stack
+**Frontend** (React.js)
 
 React Router – navigation
 
 Axios – API requests
 
-Tailwind CSS (or your chosen styling)
+Tailwind CSS (styling)
 
-Backend (Express.js & Node.js)
+**Backend** (Express.js & Node.js)
 
 Express.js – server setup & routes
 
@@ -36,30 +34,60 @@ bcrypt – password hashing
 
 cookie-parser – secure cookie handling
 
-Database
+**Database**
 
 MongoDB with Mongoose
-
-📂 Project Structure :
-
+## 📂 Project Structure
+```
 /project-root
 │
-├── client/                  # React frontend
-│   └── src/
-│       ├── components/      # Navbar, Manager, Footer, etc.
-│       ├── pages/           # Login.jsx, Signup.jsx, Dashboard.jsx
-│       └── App.jsx
+├── /client              # React frontend
+│   ├── src/
+│   │   ├── components/  # Navbar, Manager, Footer, etc.
+│   │   ├── pages/       # Login.jsx, Signup.jsx, Dashboard.jsx
+│   │   └── App.jsx
 │
-├── server/                  # Password manager backend (CRUD for passwords)
+├── /server              # Password manager backend (CRUD for passwords)
 │
-├── auth-server/             # Authentication backend (signup, login, JWT)
-│
-├── models/
-│   └── User.js
-│
-├── routes/
-│   └── user.js
-│
-├── index.js
+├── /auth-server         # Authentication backend (signup, login, JWT)
+│   ├── models/User.js
+│   ├── routes/user.js
+│   └── index.js
 │
 └── README.md
+```
+
+
+## ⚙️ Installation & Setup
+**1. Setup Password Manager Server (Port 3000)**
+```
+cd ../server
+npm install
+npm start
+
+```
+**2. Setup Frontend (React - Port 5173)**
+```
+cd ../client
+npm install
+npm run dev
+
+```
+**3. Open in Browser**
+```
+http://localhost:5173/   # React frontend
+http://localhost:3000/   # Password manager backend
+```
+## 📸 Screenshots
+[Working Screenshots](https://drive.google.com/file/d/1VEfROIF4_dtZmatFl-oTiPfLd5Xm5S0l/view?usp=sharing)
+
+
+
+## 🔒 Security
+Master password stored as hashed (bcrypt) + salted
+
+JWT tokens stored in HTTP-only cookies
+
+Passwords encrypted before saving in MongoDB
+
+Each user sees only their own data
