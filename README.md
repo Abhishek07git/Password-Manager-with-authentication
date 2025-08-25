@@ -39,27 +39,26 @@ cookie-parser – secure cookie handling
 MongoDB with Mongoose
 ## 📂 Project Structure
 ```
-/project-root
+/project-root/
 │
-├── /client              # React frontend
-│   ├── src/
-│   │   ├── components/  # Navbar, Manager, Footer, etc.
-│   │   ├── pages/       # Login.jsx, Signup.jsx, Dashboard.jsx
-│   │   └── App.jsx
+├── client/                     # React frontend
+│   └── src/
+│       ├── components/         # Navbar, Manager, Footer, etc.
+│       ├── pages/              # Login.jsx, Signup.jsx, Dashboard.jsx
+│       └── App.jsx
 │
-├── /server              # Password manager backend (CRUD for passwords)
-│
-├── /auth-server         # Authentication backend (signup, login, JWT)
+├── server/                     # Backend (Authentication + Password Manager)
 │   ├── models/User.js
 │   ├── routes/user.js
 │   └── index.js
 │
-└── README.md
+└── README.md                   # Project documentation
+
 ```
 
 
 ## ⚙️ Installation & Setup
-**1. Setup Password Manager Server (Port 3000)**
+**1. Backend Setup (Server on Port 3000)**
 ```
 cd ../server
 npm install
@@ -76,7 +75,7 @@ npm run dev
 **3. Open in Browser**
 ```
 http://localhost:5173/   # React frontend
-http://localhost:3000/   # Password manager backend
+http://localhost:3000/   # server backend
 ```
 ## 📸 Screenshots
 [Working Screenshots](https://drive.google.com/file/d/1VEfROIF4_dtZmatFl-oTiPfLd5Xm5S0l/view?usp=sharing)
